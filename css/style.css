@@ -165,9 +165,7 @@ section:nth-child(even) {
 }
 
 /* Фото в разделе "Обо мне" */
-.about-photo {
-    flex-shrink: 0;
-}
+
 
 /* .photo-placeholder {
     width: 150px;
@@ -182,19 +180,9 @@ section:nth-child(even) {
     background: var(--bg-card);
 } */
 
-.about-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--accent);
-    display: block;
-    transition: opacity 0.2s;
-}
 
-.about-img:hover {
-    opacity: 0.85;
-}
+
+
 
 .about-text p {
     margin-bottom: 14px;
@@ -521,4 +509,24 @@ footer {
     margin-top: 30px;
     font-weight: 600;
     font-size: 1rem;
+}
+
+/* ===== Фото в разделе "Обо мне" ===== */
+.about-photo {
+    flex-shrink: 0;
+}
+
+.about-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e94560;
+    display: block;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.about-img:hover {
+    opacity: 0.75;
 }
