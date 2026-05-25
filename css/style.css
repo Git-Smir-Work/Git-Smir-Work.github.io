@@ -337,7 +337,7 @@ section:nth-child(even) {
 
 .btn-submit {
     background: var(--accent);
-    color: #d4e1f1;
+    color: #f1f4f7;
     border: none;
     padding: 14px 28px;
     border-radius: var(--radius);
