@@ -171,13 +171,13 @@
     </section>
 
     <!-- Контакты -->
+    <!-- Контакты -->
     <section id="contact">
         <div class="container">
             <h2>Связаться со мной</h2>
-            <p>Выберите удобный способ связи. Я отвечу в течение суток.</p>
+            <p>Напишите — я отвечу в течение суток.</p>
             <div class="contact-wrapper">
                 <form class="contact-form" action="https://formspree.io/f/mojbnjqo" method="POST">
-                    <input type="hidden" name="_next" value="https://git-smir-work.github.io/thanks.html">
                     <div class="form-group">
                         <label for="name">Имя *</label>
                         <input type="text" id="name" name="name" placeholder="Ваше имя" required>
@@ -191,32 +191,47 @@
                         <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
                     </div>
                     <div class="form-group">
-                        <label for="channel">Предпочитаемый способ связи</label>
-                        <select id="channel" name="channel">
-                            <option value="email">Email</option>
-                            <option value="telegram">Telegram</option>
-                            <option value="phone">Телефон</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Сообщение * (до 1000 символов)</label>
+                        <label for="message">Сообщение *</label>
                         <textarea id="message" name="message" placeholder="Опишите задачу или вопрос..."
-                            maxlength="1000" required></textarea>
-                        <span class="char-counter">0 / 1000</span>
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn-submit">Отправить</button>
                 </form>
                 <div class="contact-links">
-                    <h3>Прямые ссылки</h3>
-                    <a href="https://t.me/Ilsmir13" target="_blank" class="contact-link-item">
-                        <span class="contact-icon">📬</span> Telegram
-                    </a>
-                    <a href="mailto:sm13rnov@yandex.ru" class="contact-link-item">
-                        <span class="contact-icon">📧</span> Email
-                    </a>
-                    <a href="https://github.com/Git-Smir-Work" target="_blank" class="contact-link-item">
-                        <span class="contact-icon">💻</span> GitHub
-                    </a>
+                    <h3>Прямые контакты</h3>
+
+                    <div class="contact-link-row">
+                        <span class="contact-icon">📬</span>
+                        <span class="contact-label">Telegram</span>
+                        <input type="text" value="@Ilsmir13" class="copy-input" readonly>
+                        <button class="copy-btn"
+                            onclick="navigator.clipboard.writeText('@Ilsmir13'); this.textContent='✓'; setTimeout(() => this.textContent='Копировать', 1500)">Копировать</button>
+                    </div>
+
+                    <div class="contact-link-row">
+                        <span class="contact-icon">📧</span>
+                        <span class="contact-label">Email</span>
+                        <input type="text" value="sm13rnov@yandex.ru" class="copy-input" readonly>
+                        <button class="copy-btn"
+                            onclick="navigator.clipboard.writeText('sm13rnov@yandex.ru'); this.textContent='✓'; setTimeout(() => this.textContent='Копировать', 1500)">Копировать</button>
+                    </div>
+
+                    <div class="contact-link-row">
+                        <span class="contact-icon">💼</span>
+                        <span class="contact-label">HeadHunter</span>
+                        <a href="https://hh.ru/resume/84848c8fff104b5a920039ed1f563232484e41" target="_blank"
+                            class="contact-link-item">Открыть резюме
+                            →</a>
+                    </div>
+
+                    <!-- GitHub пока скрыт, раскомментируешь когда будет готов -->
+                    <!--
+                <div class="contact-link-row">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/Git-Smir-Work" target="_blank" class="contact-link-item">Открыть профиль →</a>
+                </div>
+                -->
                 </div>
             </div>
         </div>
