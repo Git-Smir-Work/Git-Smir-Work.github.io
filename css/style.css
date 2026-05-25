@@ -85,6 +85,12 @@ header {
     letter-spacing: 1px;
 }
 
+.logo img {
+    max-width: 60px;   
+    height: auto;      
+    display: block;
+}
+
 nav a {
     color: var(--text-muted) !important;
     margin-left: 24px;
