@@ -164,11 +164,12 @@ section:nth-child(even) {
     align-items: flex-start;
 }
 
+/* Фото в разделе "Обо мне" */
 .about-photo {
     flex-shrink: 0;
 }
 
-.photo-placeholder {
+/* .photo-placeholder {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -179,6 +180,15 @@ section:nth-child(even) {
     color: var(--text-muted);
     font-size: 0.9rem;
     background: var(--bg-card);
+} */
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    display: block;
 }
 
 .about-text p {
