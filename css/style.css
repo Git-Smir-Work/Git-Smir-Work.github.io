@@ -614,3 +614,49 @@ section:nth-child(even) {
     opacity: 0.6;
     border-style: dashed;
 }
+
+/* Пометка "в разработке" в меню */
+.dev-badge {
+    font-size: 0.7rem;
+    background: rgba(233, 69, 96, 0.15);
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+/* ===== Плашка "В разработке" ===== */
+.dev-notice {
+    padding: 0 0 40px;
+}
+
+.dev-notice-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: rgba(233, 69, 96, 0.06);
+    border: 1px solid rgba(233, 69, 96, 0.2);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+}
+
+.dev-notice-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.dev-notice-content strong {
+    display: block;
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.dev-notice-content p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
