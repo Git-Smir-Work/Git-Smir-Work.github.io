@@ -429,31 +429,126 @@ section:nth-child(even) {
 
 /* ===== Адаптив ===== */
 @media (max-width: 768px) {
+
+    /* Шапка — вертикально */
+    .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 20px;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 0.82rem;
+        padding: 4px 8px;
+        background: var(--bg-card);
+        border-radius: var(--radius);
+    }
+
+    nav a:hover {
+        background: var(--accent);
+        color: #fff !important;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 50px 0 40px;
+    }
+
     .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero-stats {
-        gap: 20px;
-    }
-
-    .stat-number {
         font-size: 1.8rem;
     }
 
+    .hero-sub {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        gap: 16px;
+    }
+
+    .stat-item {
+        min-width: 60px;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    /* Обо мне */
     .about-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
+    .about-img {
+        width: 140px !important;
+        height: 140px !important;
+        max-width: 140px !important;
+    }
+
+    /* Секции */
+    section {
+        padding: 50px 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Работы */
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Навыки */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Контакты */
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
 
-    nav a {
-        margin-left: 12px;
-        font-size: 0.85rem;
+    .contact-link-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .copy-input {
+        width: 100%;
+    }
+
+    /* Сертификаты */
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Плашка разработки */
+    .dev-notice-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Пометка "в разработке" в меню */
+    .dev-badge {
+        font-size: 0.65rem;
+        padding: 1px 5px;
     }
 }
 
