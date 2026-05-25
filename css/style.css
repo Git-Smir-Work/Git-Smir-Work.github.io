@@ -557,17 +557,39 @@ footer {
     margin-bottom: 12px;
 }
 
+.cert-year {
+    display: inline-block;
+    background: rgba(233, 69, 96, 0.12);
+    color: var(--accent);
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.cert-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.cert-link-item {
+    font-size: 0.85rem;
+    color: var(--text-muted) !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.cert-link-item:hover {
+    color: #fff !important;
+}
+
 .cert-status {
     font-size: 0.85rem;
-    color: #27ae60;
-    font-weight: 600;
+    color: var(--text-muted);
 }
 
 .cert-card--soon {
     opacity: 0.6;
     border-style: dashed;
-}
-
-.cert-card--soon .cert-status {
-    color: var(--text-muted);
 }
