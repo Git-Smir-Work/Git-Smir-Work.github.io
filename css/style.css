@@ -291,7 +291,6 @@ section:nth-child(even) {
 }
 
 /* ===== Контакты ===== */
-/* ===== Контакты ===== */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -338,7 +337,7 @@ section:nth-child(even) {
 
 .btn-submit {
     background: var(--accent);
-    color: #fff;
+    color: #458ae4;
     border: none;
     padding: 14px 28px;
     border-radius: var(--radius);
