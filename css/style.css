@@ -8,7 +8,7 @@
 :root {
     --bg: #1a1a2e;
     --bg-light: #16213e;
-    --bg-card: #0f3460;
+    --bg-card: #6283ac;
     --text: #e0e0e0;
     --text-muted: #a0a0b0;
     --accent: #e94560;
@@ -352,7 +352,7 @@ section:nth-child(even) {
     background: var(--accent-hover);
 }
 
-ё .contact-links {
+.contact-links {
     background: var(--bg-card);
     border-radius: var(--radius);
     padding: 24px;
