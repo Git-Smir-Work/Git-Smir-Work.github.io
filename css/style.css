@@ -31,7 +31,9 @@ body {
     padding: 0 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #fff;
 }
 
@@ -78,16 +80,16 @@ header {
     height: 60px;
 }
 
-.logo {
+/* .logo {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff !important;
     letter-spacing: 1px;
-}
+} */
 
 .logo img {
-    max-width: 60px;   
-    height: auto;      
+    max-width: 60px;
+    height: auto;
     display: block;
 }
 
@@ -405,20 +407,25 @@ footer {
     .hero h1 {
         font-size: 2rem;
     }
+
     .hero-stats {
         gap: 20px;
     }
+
     .stat-number {
         font-size: 1.8rem;
     }
+
     .about-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
+
     nav a {
         margin-left: 12px;
         font-size: 0.85rem;
