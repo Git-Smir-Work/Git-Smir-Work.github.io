@@ -337,7 +337,7 @@ section:nth-child(even) {
 
 .btn-submit {
     background: var(--accent);
-    color: #f1f4f7;
+    color: #f7f7f7;
     border: none;
     padding: 14px 28px;
     border-radius: var(--radius);
@@ -352,7 +352,7 @@ section:nth-child(even) {
     background: var(--accent-hover);
 }
 
-.contact-links {
+ё .contact-links {
     background: var(--bg-card);
     border-radius: var(--radius);
     padding: 24px;
